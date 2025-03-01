@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="./css/form.css" />
+</head>
+
+<body>
+  <form class="feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input class="feedback-input" type="email" name="email" autofocus />
+    </label>
+    <label class="label-message">
+      Message
+      <textarea class="feedback-input input-message" name="message" rows="8"></textarea>
+    </label>
+    <button class="feedback-submit" type="submit">Submit</button>
+    <div id="message" class="hidden"></div>
+  </form>
+
+  <script src="./js/2-form.js" type="module"></script>
 </body>
+
 </html>
